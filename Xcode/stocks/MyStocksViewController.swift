@@ -118,53 +118,6 @@ private extension MyStocksViewController {
         tableView.setEditing(isEditing, animated: true)
     }
 
-//    @objc
-//    func fetchStockDatawip() {
-//        guard let list = dataSource.first?.items else { return }
-//
-//
-//        let symbols = list.compactMap { $0.symbol }
-//        print(symbols)
-//
-//        let urls = symbols.map { Finnhub.quoteUrl($0) }
-//
-//        URL.get(urls) { o in
-//            print(o)
-//
-//            var items: [Item] = []
-//
-//            for data in o {
-//                let decoder = JSONDecoder()
-//                if let decoded = try? decoder.decode(Finnhub.Quote.self, from: data) {
-//                    print(decoded)
-//
-//                    let item = Item(symbol: "", quote: decoded.quote)
-//                    items.append(item)
-//
-//                }
-//            }
-//
-//
-//
-//            // update my saved stocks
-//                       var s = MyStocks()
-//                       s.save(items)
-//
-//                       // update ui
-//                       self.refreshControl.endRefreshing()
-//                       self.dataSource = self.makeDataSource(items: items, sort: self.sort)
-//                       self.loadList()
-//
-//                       let foot = self.footerView
-//                       foot.date = Date()
-//                       foot.update()
-//                       self.tableView.tableFooterView = foot
-//
-//
-//        }
-//
-//    }
-
     @objc
     func updateStockData() {
         // TODO: while fetching stock data, prevent list changes (delete)

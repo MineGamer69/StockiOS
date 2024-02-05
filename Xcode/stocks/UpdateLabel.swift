@@ -51,7 +51,7 @@ private extension UpdateLabel {
             relative = "A moment ago"
         }
 
-        let string = "Updated \(dateFormatter.string(from: Date()))\(Theme.separator)\(provider?.rawValue ?? "") · \(relative)"
+        let string = "Updated \(dateFormatter.string(from: Date()))\(Theme.separator)\("Hello World!") · \(relative)"
 
         return string
     }

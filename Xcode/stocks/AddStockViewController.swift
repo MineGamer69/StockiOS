@@ -62,7 +62,8 @@ private extension AddStockViewController {
                 "FB",
                 "LK",
                 "AMZN",
-                "SHOP"
+                "SHOP",
+                "PLTR"
         ]
         dataSource = popularSymbols.dataSource
         tableView.reloadData()
